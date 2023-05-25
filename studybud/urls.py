@@ -8,8 +8,15 @@ from django.http import HttpResponse
 def home(request):
     return HttpResponse('Home Page')
 
+#Adding another route
+def room(request):
+    return HttpResponse('ROOM')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path 
     path('',home),
+
+    #adding path to the new route "ROOM"
+    path('room/',room),
 ]
