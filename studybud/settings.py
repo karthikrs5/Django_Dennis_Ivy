@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #Adding an app
+    #Adding an app here
     'base.apps.BaseConfig',
 ]
 
