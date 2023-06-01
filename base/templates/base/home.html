@@ -3,7 +3,7 @@
 {% block content %}
 
 <style>
-    .home-container{
+    .home-container {
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
@@ -17,12 +17,15 @@
     <!-- Sidebar -->
     <div>
         <h3>Browse Topics</h3>
-        <hr>
 
+        <div>
+            <a href="{% url 'home' %}">All</a>
+        </div>
+        <hr>
         {% for topic in topics %}
         <div>
             <a href="{% url 'home' %}?q={{ topic.name }}"> {{topic.name}} </a>
-            <hr>
+            
         </div>
 
         {% endfor %}
